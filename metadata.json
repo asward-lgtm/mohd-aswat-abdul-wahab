@@ -1,0 +1,8 @@
+{
+  "name": "Remix OT Tracker - Employee Overtime Portal - MPB",
+  "description": "Remix OT Tracker - Emp OT Portal - MPB",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
