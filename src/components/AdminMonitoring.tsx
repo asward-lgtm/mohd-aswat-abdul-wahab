@@ -179,14 +179,16 @@ export const AdminMonitoring: React.FC<AdminMonitoringProps> = ({
                 Asward
               </span>
               <span className="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-[11px] font-semibold">
-                Lead HR Auditor
+                {isBm ? 'Ketua Pengaudit HR' : 'Lead HR Auditor'}
               </span>
               <span className="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-[11px]">
-                Personnel Ops #DIR-881
+                {isBm ? 'Penggajian Kumpulan #DIR-881' : 'Group Payroll Ops #DIR-881'}
               </span>
             </div>
             <p className="text-xs text-on-surface-variant mt-1">
-              Supervising Regional Operational Overtime & Monthly Payroll Reconciliation
+              {isBm
+                ? 'Penyeliaan Tuntutan Masa Lebih Masa Kakitangan Media Prima Berhad (Sri Pentas, Balai Berita & Primeworks)'
+                : 'Supervising Media Prima Berhad Group Overtime & Monthly Payroll Reconciliation (Sri Pentas, Balai Berita & Primeworks)'}
             </p>
           </div>
         </div>
@@ -275,7 +277,7 @@ export const AdminMonitoring: React.FC<AdminMonitoringProps> = ({
               <span className="text-[11px] text-secondary font-semibold">100% active</span>
             </div>
             <p className="text-xs text-on-surface-variant mt-0.5">
-              {isBm ? 'Unit Operasi & Logistik (Klik untuk urus)' : 'Operations & Logistics Units (Click to view)'}
+              {isBm ? 'Unit Penyiaran & Operasi Media Prima (Klik untuk urus)' : 'Media Prima Broadcast & Operations Units (Click to view)'}
             </p>
           </div>
           <div className="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">

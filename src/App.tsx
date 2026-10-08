@@ -185,8 +185,8 @@ export default function App() {
   const ahmadAsStaff: StaffMember = {
     id: 'STF-1042',
     name: 'Ahmad Razak',
-    department: 'Engineering',
-    role: 'Senior Software Engineer',
+    department: 'Kejuruteraan Penyiaran & Teknikal (TV3 Sri Pentas)',
+    role: 'Jurutera Siaran Kanan (Senior Broadcast Engineer)',
     status: ahmadSubmission.isSubmitted ? 'Submitted' : 'Pending',
     submittedAt: ahmadSubmission.submittedDate,
     avatar: 'AR',
@@ -488,6 +488,9 @@ export default function App() {
               );
             }}
             onResetData={handleResetData}
+            language={language}
+            onSimulateStaff={handleSimulateStaff}
+            allStaff={allStaff}
           />
 
           {/* Conditional Multi-Page Rendering */}

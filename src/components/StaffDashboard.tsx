@@ -119,18 +119,18 @@ export const StaffDashboard: React.FC<StaffDashboardProps> = ({
     if (type === 'evening') {
       setStartTime('18:00');
       setEndTime('21:30');
-      setProject('Core Banking Migration');
-      setNotes(isBm ? 'Pemasangan patch pangkalan data' : 'Database staging deployment');
+      setProject('Siaran Langsung Buletin Utama (TV3)');
+      setNotes(isBm ? 'Penyelenggaraan video switcher & sambungan satelit MCR siaran langsung' : 'Live prime news broadcast MCR & video switcher monitoring');
     } else if (type === 'hotfix') {
       setStartTime('19:00');
       setEndTime('23:00');
-      setProject('Incident Hotfix L2');
-      setNotes(isBm ? 'Penyelesaian deadlock sistem gateway' : 'Resolved gateway deadlock timeout');
+      setProject('Penerbitan Siaran Luar OB Van (Primeworks / Stadium)');
+      setNotes(isBm ? 'Kawalan teknikal gentian optik dan audio pemancar OB Van siaran langsung' : 'OB Van optical fiber transmission and live audio monitoring');
     } else if (type === 'weekend') {
       setStartTime('14:00');
       setEndTime('17:00');
-      setProject('Weekend Deployment Standby');
-      setNotes(isBm ? 'Pemantauan kluster mikroservis' : 'Microservices standby monitoring');
+      setProject('Penyelenggaraan Pemancar & MCR Sri Pentas');
+      setNotes(isBm ? 'Siaga ujian sandaran pemancar frekuensi penyiaran Sri Pentas' : 'Weekend transmitter redundancy failover standby at Sri Pentas');
     } else if (type === 'last' && entries.length > 0) {
       const last = entries[0];
       setStartTime(last.startTime);

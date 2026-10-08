@@ -22,13 +22,20 @@ export const StaffDirectoryPage: React.FC<StaffDirectoryPageProps> = ({
 
   // New staff form state
   const [name, setName] = useState('');
-  const [department, setDepartment] = useState('Fleet Logistics');
+  const [department, setDepartment] = useState('Bilik Berita & Hal Ehwal Semasa (TV3)');
   const [role, setRole] = useState('');
   const [initialHours, setInitialHours] = useState('3.0');
 
   const isBm = language === 'bm';
 
-  const departments = ['Engineering', 'Fleet Logistics', 'Warehouse Hub B', 'Dispatch Control', 'Quality Assurance'];
+  const departments = [
+    'Kejuruteraan Penyiaran & Teknikal (TV3 Sri Pentas)',
+    'Bilik Berita & Hal Ehwal Semasa (TV3)',
+    'Unit Siaran Luar (OB Van) & Primeworks',
+    'Media Prima Audio (Hot FM & Fly FM)',
+    'REV Media Group & Tonton',
+    'Penerbitan Hiburan & Kandungan TV3',
+  ];
 
   const filteredStaff = allStaff.filter((staff) => {
     const q = search.toLowerCase().trim();
@@ -47,7 +54,7 @@ export const StaffDirectoryPage: React.FC<StaffDirectoryPageProps> = ({
     e.preventDefault();
     if (!name.trim()) return;
 
-    const newId = `EMP-${10500 + allStaff.length}`;
+    const newId = `MPB-${3100 + allStaff.length}`;
     const initials = name
       .split(' ')
       .map((p) => p[0])
@@ -60,7 +67,7 @@ export const StaffDirectoryPage: React.FC<StaffDirectoryPageProps> = ({
       id: newId,
       name: name.trim(),
       department,
-      role: role.trim() || 'Logistics Coordinator',
+      role: role.trim() || 'Wartawan / Jurutera Penyiaran',
       status: 'Pending',
       submittedAt: null,
       avatar: initials.slice(0, 2),
@@ -71,8 +78,8 @@ export const StaffDirectoryPage: React.FC<StaffDirectoryPageProps> = ({
           startTime: '18:00',
           endTime: '21:00',
           duration: hoursNum,
-          project: 'Warehouse Logistics System',
-          notes: 'Unscheduled inventory shift triage',
+          project: 'Siaran Langsung Buletin Utama (TV3)',
+          notes: 'Tugasan kecemasan siaran langsung berita dan hal ehwal semasa',
         },
       ],
     };

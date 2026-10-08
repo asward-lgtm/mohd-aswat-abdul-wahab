@@ -93,10 +93,10 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                       Ahmad Razak
                     </div>
                     <div className="text-xs text-on-surface-variant">
-                      STF-1042 • Jurutera Perisian Kanan
+                      STF-1042 • Jurutera Siaran Kanan (TV3 Sri Pentas)
                     </div>
                     <div className="text-[11px] text-primary font-semibold mt-0.5">
-                      {isBm ? 'Peranan: Kakitangan (Log & Hantar OT)' : 'Role: Staff Member (Log OT)'}
+                      {isBm ? 'Peranan: Kakitangan (Log & Tuntutan OT)' : 'Role: Staff Member (Log OT)'}
                     </div>
                   </div>
                 </div>
@@ -127,10 +127,10 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                       Asward
                     </div>
                     <div className="text-xs text-on-surface-variant">
-                      DIR-881 • Ketua Pengaudit HR
+                      DIR-881 • Ketua Pengaudit HR (asward@mediaprima.com.my)
                     </div>
                     <div className="text-[11px] text-secondary font-semibold mt-0.5">
-                      {isBm ? 'Peranan: Pentadbir (Audit & Penggajian)' : 'Role: Administrator (Auditor)'}
+                      {isBm ? 'Peranan: Pentadbir HR & Penggajian Kumpulan' : 'Role: HR Auditor & Group Payroll'}
                     </div>
                   </div>
                 </div>
@@ -139,25 +139,25 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                 </span>
               </button>
 
-              {/* Persona 3: Elena Rostova (Staff Lead) */}
+              {/* Persona 3: Nurul Izzati (News Producer / TV3) */}
               <button
                 type="button"
-                onClick={() => handleQuickSelect('staff', 'Elena Rostova')}
+                onClick={() => handleQuickSelect('staff', 'Nurul Izzati')}
                 className="p-4 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container-high/60 text-left transition-all flex items-center justify-between group"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-11 h-11 rounded-xl bg-surface-container-high text-primary flex items-center justify-center font-bold text-sm">
-                    ER
+                    NI
                   </div>
                   <div>
                     <div className="font-headline font-bold text-sm text-on-surface group-hover:text-primary transition-colors">
-                      Elena Rostova
+                      Nurul Izzati
                     </div>
                     <div className="text-xs text-on-surface-variant">
-                      EMP-10493 • Inventory Lead (Hub B)
+                      MPB-2041 • Wartawan Penyiaran (Bilik Berita TV3)
                     </div>
                     <div className="text-[11px] text-secondary font-semibold mt-0.5">
-                      {isBm ? 'Status: Telah Disahkan (12.0 Jam)' : 'Status: Submitted (12.0h)'}
+                      {isBm ? 'Status: Disahkan & Dihantar (12.0 Jam)' : 'Status: Submitted (12.0h)'}
                     </div>
                   </div>
                 </div>
